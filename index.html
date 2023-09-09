@@ -130,9 +130,9 @@
                 if (prediction[i].probability.toFixed(2) > 0.1) {
                     barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
                 } else if (prediction[i].probability.toFixed(2) >= 0.01) {
-                    barWidth = "80%"
+                    barWidth = "8%"
                 } else {
-                    barWidth = "40%"
+                    barWidth = "4%"
                 }
                 var labelTitle = prediction[i].className;
                 var idx = Object.keys(dic_class2information).indexOf(prediction[i].className);
